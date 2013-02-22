@@ -1,0 +1,5 @@
+Fullcalendar demo for Rails 3, adapted for assets pipeline. 
+
+Originally started here: https://github.com/bokmann/rails3_fullcalendar
+Using fullcalendar plugin: http://fullcalendar.vinsol.com
+
