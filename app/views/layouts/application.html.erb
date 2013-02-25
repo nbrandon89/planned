@@ -2,6 +2,7 @@
 <html>
 <head>
   <title>Plann.ed</title>
+  <link type="text/css" href="../assets/stylesheets/ui-darkness/ui.all.css" rel="Stylesheet" />  
   <%= stylesheet_link_tag    "application", :media => "all" %>
   <%#= javascript_include_tag "application" %>
   <%= stylesheet_link_tag    "darkstrap.css" %>
@@ -9,6 +10,8 @@
 
   <%= stylesheet_link_tag "fullcalendar.css" %>
   <%= stylesheet_link_tag "fullcalendar.print.css" %>
+  <%= stylesheet_link_tag "jquery-ui-1.8.11.custom.min.js" %>
+
   <%= javascript_include_tag "jquery.js" %>
   <%= javascript_include_tag "jquery.rest.js" %>
   <%= javascript_include_tag "rails.js" %>
@@ -20,7 +23,8 @@
   <%= javascript_include_tag :defaults %>
   
   <!-- these are needed for the calendar. -->
-  <%= javascript_include_tag "jquery-ui-1.8.11.custom.min.js" %>
+  <%#= javascript_include_tag "jquery-ui-1.8.11.custom.min.js" %>
+  <%= javascript_include_tag "jquery-ui-1.10.1.custom.js" %>
 
   <%= javascript_include_tag "fullcalendar.js" %>
   <%= javascript_include_tag "calendar.js" %>
