@@ -1,11 +1,11 @@
 /*
- * FullCalendar v1.5.4 Stylesheet
+ * FullCalendar v1.5.1 Stylesheet
  *
  * Copyright (c) 2011 Adam Shaw
  * Dual licensed under the MIT and GPL licenses, located in
  * MIT-LICENSE.txt and GPL-LICENSE.txt respectively.
  *
- * Date: Tue Sep 4 23:38:33 2012 -0700
+ * Date: Sat Apr 9 14:09:51 2011 -0700
  *
  */
 
@@ -126,11 +126,11 @@ html .fc,
 .fc-widget-content {  /* <td>, usually */
 	border: 1px solid #ccc;
 	}
-	
+  /*	
 .fc-state-highlight { /* <td> today cell */ /* TODO: add .fc-today to <th> */
-	background: #ffc;
+  /*background: #ffc;*/
 	}
-	
+	*/
 .fc-cell-overlay { /* semi-transparent rectangle while dragging */
 	background: #9cf;
 	opacity: .2;
@@ -217,7 +217,7 @@ html .fc,
 .fc-state-default .fc-button-inner {
 	border-style: solid;
 	border-color: #ccc #bbb #aaa;
-	background: #F3F3F3;
+  background: #F3F3F3;
 	color: #000;
 	}
 	
@@ -281,8 +281,9 @@ a.fc-event {
 .fc-event-skin {
 	border-color: #36c;     /* default BORDER color */
 	background-color: #36c; /* default BACKGROUND color */
-	color: #fff;            /* default TEXT color */
+	color: #fff;			/* default TEXT color */
 	}
+
 	
 .fc-event-inner {
 	position: relative;
@@ -306,7 +307,6 @@ a.fc-event {
 	font-size: 300%;  /* */
 	line-height: 50%; /* */
 	}
-	
 	
 	
 /* Horizontal Events

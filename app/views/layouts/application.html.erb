@@ -4,6 +4,8 @@
   <title>Plann.ed</title>
   <%= stylesheet_link_tag    "application", :media => "all" %>
   <%#= javascript_include_tag "application" %>
+  <%= stylesheet_link_tag    "darkstrap.css" %>
+
 
   <%= stylesheet_link_tag "fullcalendar.css" %>
   <%= javascript_include_tag "jquery.js" %>
@@ -25,7 +27,7 @@
   <%= javascript_tag "var AUTH_TOKEN = #{form_authenticity_token.inspect};" if protect_against_forgery? %>
 </head>
 <body>
-	<div class="navbar navbar-fluid-top">
+	<div class="navbar navbar-invers">
   <div class="navbar-inner">
     <div class="container">
       <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
@@ -33,17 +35,11 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </a>
-      <a class="brand" href="">Plann.ed</a>
+      <!-- <a class="brand" href="">Plann.ed</a> -->
+      <%= link_to 'Plann.ed', root_path, class: 'brand' %>
       <div class="nav-collapse">
         <ul class="nav">
-          <div><li><!-- <div id="user_nav"> -->
-            <% if user_signed_in? %>
-              Signed in as <%= current_user.email %>. Not you?
-                <%= link_to "Sign out", destroy_user_session_path, :method => :delete %>
-            <% else %>
-                <%= link_to "Sign up", new_user_registration_path %> or <%= link_to "sign in", new_user_session_path %>
-            <% end %>
-          </li></div>
+          <div></div>
         </ul>
 
       </div>
@@ -51,10 +47,14 @@
   </div>
 </div>
 <div class = "container">
+
   <p class="notice"><%= notice %></p>
-  <p class="alert"><%= alert %></p>
+  <!-- <p class="alert"><%= alert %></p> -->
 
 <%= yield %>
 
+
+
 </body>
+
 </html>
