@@ -2,7 +2,7 @@
 <html>
 <head>
   <title>Plann.ed</title>
-  <link type="text/css" href="../assets/stylesheets/ui-darkness/ui.all.css" rel="Stylesheet" />  
+  <link type="text/css" href="../assets/stylesheets/overcast/ui.all.css" rel="Stylesheet" />  
   <%= stylesheet_link_tag    "application", :media => "all" %>
   <%#= javascript_include_tag "application" %>
   <%= stylesheet_link_tag    "darkstrap.css" %>
@@ -45,12 +45,12 @@
       <!-- <a class="brand" href="">Plann.ed</a> -->
       <%= link_to 'Plann.ed', root_path, class: 'brand' %>
       <div class="nav-collapse">
+        <ul class="nav pull-right">
         <ul class="nav">
           <% if user_signed_in? %>
-            <a style= "position: right">
-                <%= current_user.email %>
-                <%= link_to "Sign out", destroy_user_session_path, :method => :delete, class: 'btn btn-danger' %>
-          <% end %></a>
+                <%= link_to current_user.email, '#', class: 'brand' %>
+                <%= link_to "Sign out", destroy_user_session_path, :method => :delete, class: 'btn btn-danger' %></ul>
+          <% end %>
 
           <div></div>
         </ul>

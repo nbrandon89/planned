@@ -2804,7 +2804,8 @@ setDefaults({
 	defaultEventMinutes: 120,
 	axisFormat: 'h(:mm)tt',
 	timeFormat: {
-		agenda: 'h:mm{ - h:mm}'
+		// agenda: 'h:mm{ - h:mm}'
+		agenda: 'h(:mm)'
 	},
 	dragOpacity: {
 		agenda: .5
