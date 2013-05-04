@@ -74,6 +74,7 @@ $(document).ready(function() {
         eventClick: function(event, jsEvent, view){
             window.location.replace("/events/"+event.id+"/edit");
         },
+        
   });
 });
 
